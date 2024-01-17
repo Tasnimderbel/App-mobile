@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical"
+            android:padding="30sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16sp"
+                android:padding="5sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorApp"/>
+            <EditText
+                android:id="@+id/FullNameProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableRight="@drawable/ic_name"
+                android:drawableTint="@color/colorApp"
+                android:hint="Full Name"
+                android:inputType="textEmailAddress"
+                android:padding="16sp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:focusableInTouchMode="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textSize="16sp"
+                android:padding="5sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorApp"
+                android:layout_marginTop="10sp"/>
+            <EditText
+                android:id="@+id/emailProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableRight="@drawable/ic_mail"
+                android:drawableTint="@color/colorApp"
+                android:hint="youremail@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="16sp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:focusableInTouchMode="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIN"
+                android:textSize="16sp"
+                android:padding="5sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorApp"
+                android:layout_marginTop="10sp"/>
+            <EditText
+                android:id="@+id/CinProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableRight="@drawable/ic_card"
+                android:drawableTint="@color/colorApp"
+                android:hint="CIN"
+                android:inputType="textEmailAddress"
+                android:padding="16sp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:focusableInTouchMode="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="16sp"
+                android:padding="5sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorApp"
+                android:layout_marginTop="10sp"/>
+            <EditText
+                android:id="@+id/PhoneProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:drawableRight="@drawable/ic_phone"
+                android:drawableTint="@color/colorApp"
+                android:hint="Phone Number"
+                android:inputType="textEmailAddress"
+                android:padding="16sp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btneditProfil"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:backgroundTint="@color/white"
+            android:textColor="#E6F436CB"
+            android:text="Edit"
+            app:cornerRadius="20sp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:backgroundTint="@color/colorApp"
+            android:text="Logout"
+            app:cornerRadius="20sp" />
+
+    </LinearLayout>
+</ScrollView>
