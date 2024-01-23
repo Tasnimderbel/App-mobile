@@ -75,18 +75,11 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId()){
-                    case R.id.devices:
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.profile:
-                        startActivity(new Intent(HomeScreen.this,ProfilActivity.class));
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.ticketE:
-                        startActivity(new Intent(HomeScreen.this,TicketElectriqueActivity.class));
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
+                if (item.getItemId()==R.id.devices) {
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                }
+                if (item.getItemId()==R.id.profile) {
+                    startActivity(new Intent(HomeScreen.this, ProfilActivity.class));
                 }
                 return true;
             }
